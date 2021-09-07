@@ -1,0 +1,49 @@
+//Fonts
+$body-font: 'Montserrat', sans-serif;
+$logo-font: 'Dancing Script', sans-serif;
+
+//Colors
+$white: #fff;
+$black: #111;
+$link-hover: #5a76fd;
+$h1-color: #22252e;
+$p-color: #777474;
+$btn-color: #5a62fd;
+$menu-icon-color: #333333;
+$footer-copy-color: #5e5e5e;
+$green-color: #27ae60;
+$dark: #222121;
+$blue: #2541b2;
+$light: #f7f7f7;
+
+//Align center
+%align-center{
+  display: flex;
+  align-items: center;
+}
+
+//Media queries
+
+@mixin lg{
+  @media screen and (max-width: 1100px){
+    @content;
+  }
+}
+
+@mixin tablet{
+  @media screen and (max-width: 768px){
+    @content;
+  }
+}
+
+@mixin sm{
+  @media screen and (max-width: 426px) {
+    @content;
+  }
+}
+
+@mixin mobile{
+  @media screen and (max-width: 280px){
+    @content;
+  }
+}

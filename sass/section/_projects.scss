@@ -1,0 +1,87 @@
+.projects {
+  .projects-heading {
+    margin-top: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+
+    h2 {
+      line-height: 55px;
+      font-size: 40px;
+      color: $h1-color;
+      letter-spacing: 1px;
+      font-weight: 700;
+      margin: 0;
+    }
+
+    .buttons-demo{
+      display: flex;
+
+      @include sm{
+        display: block;
+      }
+
+      a{
+        width: 150px;
+        height: 40px;
+        color: $btn-color;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 2px solid $btn-color;
+        text-transform: uppercase;
+        //margin: auto auto 20px;
+        border-radius: 5px;
+        font-weight: 600;
+        font-size: 15px;
+        margin-right: 10px;
+
+        @include sm{
+          margin-right: 0;
+          margin-bottom: 10px;
+        }
+
+        &:hover{
+          background-color: $btn-color;
+          color: $white;
+          box-shadow: 5px 10px 30px rgba(90,118,253,0.5);
+          transition: all ease 0.3s;
+        }
+      }
+    }
+  }
+
+  .box-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 20px 30px;
+
+    .box {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 400px;
+      width: 500px;
+      text-align: center;
+      box-shadow: 2px 2px 20px rgba(90, 118, 253, 0.15);
+      border-radius: 10px;
+      background-color: $white;
+      margin: 20px;
+      flex-grow: 1;
+
+      @media (max-width: 525px){
+        width: 100%;
+      }
+
+      img {
+        height: 150px;
+        margin: 10px;
+      }
+    }
+  }
+}

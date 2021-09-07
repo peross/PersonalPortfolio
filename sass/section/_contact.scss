@@ -1,0 +1,59 @@
+.contact {
+  background-color: $link-hover;
+  color: $white;
+
+  .contact-heading {
+    margin-top: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+
+    h2 {
+      line-height: 55px;
+      font-size: 40px;
+      color: $white;
+      letter-spacing: 1px;
+      font-weight: 700;
+      margin: 0;
+    }
+
+    h3{
+      margin: 0;
+    }
+    p{
+      .fas{
+        margin-right: 10px;
+      }
+    }
+  }
+
+  .box-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 20px 30px;
+
+    .box {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 500px;
+      height: 400px;
+      text-align: center;
+      box-shadow: 2px 2px 20px rgba(90, 118, 253, 0.15);
+      border-radius: 10px;
+      background-color: $white;
+      margin: 20px;
+      flex-grow: 1;
+
+      img {
+        height: 150px;
+        margin: 10px;
+      }
+    }
+  }
+}
